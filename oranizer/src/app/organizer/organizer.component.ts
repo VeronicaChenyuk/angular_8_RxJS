@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DateService } from '../shared/data.service';
 
 @Component({
   selector: 'app-organizer',
@@ -7,9 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OrganizerComponent implements OnInit {
 
-  constructor() { }
+  constructor(public dateService: DateService) { }
 
-  ngOnInit(): void {
+  ngOnInit(){
   }
 
 }
